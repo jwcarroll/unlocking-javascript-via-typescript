@@ -955,7 +955,7 @@ export default class Presentation extends React.Component {
             Thank You!
           </Heading>
           <Heading size={1} fit caps lineHeight={1} margin="0px auto 40px" textColor="secondary">
-            via
+            https://github.com/jwcarroll/unlocking-javascript-via-typescript
           </Heading>
           <Image src={images.typescriptLogo} margin="0px auto 40px" height="150px" />
           <Layout>
