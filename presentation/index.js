@@ -247,7 +247,7 @@ export default class Presentation extends React.Component {
             { loc: [17, 20], note: "Template strings" }
           ]}>
         </CodeSlide>
-        <Slide transition={["slide"]} bgColor="black" bgImage={images.abeLincoln} bgDarken={0.6}>
+        <Slide transition={["slide"]} bgColor="tertiary" bgImage={images.abeLincoln} bgDarken={0.6}>
           <BlockQuote>
             <Quote>Template string are pretty dope!</Quote>
             <Cite>Abraham Lincoln</Cite>
@@ -352,6 +352,26 @@ export default class Presentation extends React.Component {
               <ListItem>Poxies</ListItem>
               <ListItem>Decorators</ListItem>
             </List>
+          </Layout>
+        </Slide>
+        <Slide transition={["slide"]} bgColor="tertiary">
+          <Heading size={1} fit caps lineHeight={1} textColor="primary">
+            Classes
+          </Heading>
+        </Slide>
+        <Slide transition={["slide"]} bgColor="codebg">
+          <Heading size={1} margin="0px auto 40px" textColor="primary">Simple Class</Heading>
+          <Layout style={{ alignItems: "flex-start", justifyContent: "center" }}>
+            <Fill>
+              <Appear>
+                <CodePane textSize="28px" lang="typescript" source={snippet("classes/simple-class.sample")}></CodePane>
+              </Appear>
+            </Fill>
+            <Fill>
+              <Appear>
+                <CodePane textSize="28px" lang="typescript" source={snippet("classes/simple-class.compiled.sample")}></CodePane>
+              </Appear>
+            </Fill>
           </Layout>
         </Slide>
         <Slide transition={["slide"]} bgColor="tertiary">
