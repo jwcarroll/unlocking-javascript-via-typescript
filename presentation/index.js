@@ -33,6 +33,8 @@ const images = {
   typescriptLogo: require("../assets/typescript-logo.svg"),
   mindBlown: require("file-loader!../assets/mind-blown.mp4"),
   abeLincoln: require("../assets/abe-lincoln.png"),
+  selfie: require("../assets/professor-with-stars.jpg"),
+  selfieTweet: require("../assets/selfie-tweet.png"),
   destructuring: {
     extraPropError: require("../assets/extra-property-error.png"),
     objectSpread: require("../assets/object-destructuring-spread.png")
@@ -130,17 +132,46 @@ export default class Presentation extends React.Component {
             <div>
               <Layout>
                 <Fill>
-                  <Text margin="40px 0 0" textColor="quartenary" size={1} bold>
+                  <Text margin="40px 0 0" textColor="tertiary" size={1} bold>
                     Josh Carroll
                 </Text>
                 </Fill>
                 <Fill>
-                  <Text margin="40px 0 0" textColor="quartenary" size={1} bold>
+                  <Text margin="40px 0 0" textColor="tertiary" size={1} bold>
                     Director of Consulting
                 </Text>
                 </Fill>
               </Layout>
             </div>
+          </Appear>
+        </Slide>
+        <Slide transition={["zoom"]} bgColor="primary">
+          <Heading size={1} fit caps lineHeight={1} textColor="tertiary">
+            Selfish Selfie
+          </Heading>
+          <Image src={images.selfie.replace("/", "")} />
+        </Slide>
+        <Slide transition={["slide"]} bgColor="tertiary">
+          <Heading size={1} fit caps lineHeight={1} textColor="primary">
+            Selfish Selfie Drawing
+          </Heading>
+          <Appear>
+            <Text margin="40px 0 0" fit size={1} bold>
+              Find someone with a <span style={styles.keyword}>ResultStack</span> Shirt
+            </Text>
+          </Appear>
+          <Appear>
+            <Text margin="40px 0 0" fit size={1} bold>
+              Take a <span style={styles.keyword}>picture</span> with them
+            </Text>
+          </Appear>
+          <Appear>
+            <Image src={images.selfieTweet.replace("/", "")} />
+          </Appear>
+          <Appear>
+            <Text margin="40px 0 0" fit size={1} bold>
+              Chance to win a <span style={styles.keyword}>$50</span> Amazon Gift Card
+            </Text>
           </Appear>
         </Slide>
         <Slide transition={["slide"]} bgColor="tertiary">
