@@ -145,35 +145,6 @@ export default class Presentation extends React.Component {
             </div>
           </Appear>
         </Slide>
-        <Slide transition={["zoom"]} bgColor="primary">
-          <Heading size={1} fit caps lineHeight={1} textColor="tertiary">
-            Selfish Selfie
-          </Heading>
-          <Image src={images.selfie.replace("/", "")} />
-        </Slide>
-        <Slide transition={["slide"]} bgColor="tertiary">
-          <Heading size={1} fit caps lineHeight={1} textColor="primary">
-            Selfish Selfie Drawing
-          </Heading>
-          <Appear>
-            <Text margin="40px 0 0" fit size={1} bold>
-              Find someone with a <span style={styles.keyword}>ResultStack</span> Shirt
-            </Text>
-          </Appear>
-          <Appear>
-            <Text margin="40px 0 0" fit size={1} bold>
-              Take a <span style={styles.keyword}>picture</span> with them
-            </Text>
-          </Appear>
-          <Appear>
-            <Image src={images.selfieTweet.replace("/", "")} />
-          </Appear>
-          <Appear>
-            <Text margin="40px 0 0" fit size={1} bold>
-              Chance to win a <span style={styles.keyword}>$50</span> Amazon Gift Card
-            </Text>
-          </Appear>
-        </Slide>
         <Slide transition={["slide"]} bgColor="tertiary">
           <Heading size={1} fit caps lineHeight={1} textColor="primary">
             What is TypeScript?
