@@ -13,7 +13,7 @@ var serverPort = process.env.PORT || 3000;
 app.use('/css', express.static('css'));
 app.use('/fonts', express.static('fonts'));
 app.use('/app', express.static('app'));
-app.use('/scripts', express.static('assets/scripts'));
+app.use('/assets/scripts', express.static('assets/scripts'));
 app.use('/node_modules', express.static('node_modules'));
 
 app.use(require("webpack-dev-middleware")(compiler, {
@@ -23,11 +23,11 @@ app.use(require("webpack-dev-middleware")(compiler, {
 
 app.use(require("webpack-hot-middleware")(compiler));
 
-app.get("/styles/prism-tomorrow.css", function(req, res) {
+app.get("/assets/styles/prism-tomorrow.css", function(req, res) {
   res.sendFile(path.join(__dirname, "/assets/styles/prism-tomorrow.1.3.0.css"));
 });
 
-app.get("/scripts/prism.js", function(req, res) {
+app.get("/assets/scripts/prism.js", function(req, res) {
   res.sendFile(path.join(__dirname, "/assets/scripts/prism.js"));
 });
 
